@@ -82,6 +82,7 @@ const tablesData = [
 
 let currentIndex = 0;
 
+
 const tableImg = document.getElementById("tableImg");
 const tablePrice = document.getElementById("tablePrice");
 const tableName = document.getElementById("tableName");
@@ -90,7 +91,11 @@ const whatsappOrderBtn = document.getElementById("whatsappOrderBtn");
 const tableCounter = document.getElementById("tableCounter");
 const prevTableBtn = document.getElementById("prevTableBtn");
 const nextTableBtn = document.getElementById("nextTableBtn");
+const nextIndex = (currentIndex + 1) % cakesDataList.length;
+const prevIndex = (currentIndex - 1 + cakesDataList.length) % cakesDataList.length;
 
+preloadImage(cakesDataList[nextIndex].image); // أو اسم الحقل الخاص بالصورة لديك
+preloadImage(cakesDataList[prevIndex].image);
 function renderTable(index) {
     const item = tablesData[index];
     if (!item || !tableImg) return;
@@ -722,6 +727,11 @@ function renderCakeShowcase() {
     if (cakeCardWhatsappBtn) {
         cakeCardWhatsappBtn.href = `https://wa.me/${whatsappPhone}?text=${encodeURIComponent(orderMsg)}`;
     }
+}
+function preloadImage(src) {
+  if (!src) return;
+  const img = new Image();
+  img.src = src;
 }
 
 cakeFilterPills.forEach((btn) => {
