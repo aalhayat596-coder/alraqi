@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="sticky-top shadow-sm">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand py-0 d-flex align-items-center" href="#hero-section"><img class="brand-logo-img"
+                            src="images/logo.jpeg" alt="alraqee-logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#catering-showcase">طاولات الضيافة </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sawari-section">السواري </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    قوالب الغاتو
+                                </a>
+                                <ul dir="rtl" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item cake-nav-size" href="#cakes-showcase" data-size="evening">حجم الأمسية (يكفي 8 ضيوف)</a></li>
+                                    <li><a class="dropdown-item cake-nav-size" href="#cakes-showcase" data-size="gathering">حجم الجمعات (يكفي 15 ضيفاً)</a></li>
+                                    <li><a class="dropdown-item cake-nav-size" href="#cakes-showcase" data-size="celebration">حجم الاحتفالات (يكفي 30 ضيفاً)</a></li>
+                                    <li><a class="dropdown-item cake-nav-size" href="#cakes-showcase" data-size="banquet">حجم الولائم والمناسبات الكبرى (يكفي 50 ضيفاً)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- start hero section  -->
+    <section id="hero-section" class="hero-modern py-5 d-flex align-items-center" dir="rtl">
+        <div class="container py-lg-4">
+            <div class="row align-items-center g-5">
+                <!-- عمود النصوص والأزرار -->
+                <div class="col-12 col-lg-6 text-center text-lg-end">
+                    <span class="badge hero-badge mb-3 px-3 py-2 rounded-pill">
+                        جودة استثنائية وتجربة لا تُنسى ✨
+                    </span>
+                    <h1 class="display-5 fw-bold hero-heading mb-3">
+                        نصنع لك لحظات من السعادة بمذاق لا يُقاوم
+                    </h1>
+                    <p class="lead hero-subtext mb-4">
+                        نقدم تشكيلة مختارة بعناية من أرقى المنتجات المصنوعة من أجود المكونات الطبيعية، لنشاركك أجمل
+                        مناسباتك بأسلوب عصري يليق بك.
+                    </p>
+                    <!-- أزرار الإجراء -->
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#catering-showcase"
+                            class="btn btn-primary btn-lg px-4 py-3 rounded-3 fw-semibold hero-btn-primary">
+                            تصفح الان
+                        </a>
+                        <a id="directWhatsappBtn" target="_blank" rel="noopener norefrrer" href="https://wa.me/963985212991?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%B3%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A7%D9%82%D9%8A%20%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9"
+                            class="btn btn-outline-secondary btn-lg px-4 py-3 rounded-3 fw-semibold hero-btn-secondary">
+                            تواصل معنا وتس اب <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+
+                    <!-- شريط الثقة السريع -->
+                    <div
+                        class="mt-4 pt-3 border-top d-flex justify-content-center justify-content-lg-start gap-4 text-muted small">
+                        <div><strong class="text-dark">+500</strong> عميل سعيد</div>
+                        <div><strong class="text-dark">100%</strong> مكونات طازجة</div>
+                        <div><strong class="text-dark">توصيل</strong>  سريع وآمن (مأجور)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end hero section  -->
+
+    <!-- start table section  -->
+    <section id="catering-showcase" class="showcase-section py-5" dir="rtl">
+        <div class="container">
+            <div class="text-center mb-4">
+                <span class="badge showcase-badge px-3 py-2 rounded-pill mb-2">ضيافة متكاملة</span>
+                <h2 class="fw-bold showcase-title mb-1">طاولات ضيافة الراقي</h2>
+                <p class="showcase-subtitle mb-0">تنقّل بين الطاولات واستعرض السعر والمحتويات واطلب مباشرة</p>
+            </div>
+            <!-- حاوية الكارد الواحد مع أزرار السابق والتالي على الجانبين -->
+            <div class="showcase-stage position-relative mx-auto">
+                <button type="button" id="prevTableBtn" class="nav-arrow nav-prev" aria-label="الطاولة السابقة">
+                    &#10094;
+                </button>
+                <div class="card single-table-card border-0 shadow rounded-4 overflow-hidden">
+                    <div class="showcase-img-box">
+                        <img id="tableImg" src="images/table/c1.jpeg" alt="طاولة الضيافة الملكية" class="w-100 h-100">
+                    </div>
+                    <div class="price-strip d-flex justify-content-between align-items-center px-4 py-2">
+                        <span class="price-label fw-semibold">السعر</span>
+                        <span id="tablePrice" class="price-value fw-bold">$180</span>
+                    </div>
+                    <div class="card-body p-4 text-end">
+                        <h3 id="tableName" class="h4 fw-bold table-heading mb-2">طاولة الضيافة الملكية</h3>
+                        <p id="tableSummary" class="table-summary mb-4">
+                            تنسيق راقٍ مناسب للمناسبات والاجتماعات العائلية بلمسات فاخرة.
+                        </p>
+                        <div class="d-flex flex-column flex-sm-row gap-2">
+                            <a id="whatsappOrderBtn" href="https://wa.me/963985212991?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%B3%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A7%D9%82%D9%8A%20%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-whatsapp flex-fill py-2 fw-semibold">
+                                طلب عبر واتساب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" id="nextTableBtn" class="nav-arrow nav-next" aria-label="الطاولة التالية">
+                    &#10095;
+                </button>
+            </div>
+            <!-- مؤشر رقم الطاولة الحالية -->
+            <div id="tableCounter" class="text-center mt-3 small text-muted fw-semibold">1 / 3</div>
+        </div>
+    </section>
+    <!-- end table section  -->
+    <!-- start services section  -->
+
+    <section id="cakes-showcase" class="cakes-luxury-section py-5" dir="rtl">
+        <div class="container">
+            <!-- عنوان القسم -->
+            <div class="text-center mb-4">
+                <span class="badge cakes-top-badge px-3 py-2 rounded-pill mb-2">إبداعات باتيسري الراقي</span>
+                <h2 class="fw-bold cakes-section-title mb-1">قوالب الغاتو</h2>
+                <p class="cakes-section-subtitle mb-0">اختر الحجم المناسب لمناسبتك وتنقّل بين القوالب بكل سهولة</p>
+            </div>
+
+            <!-- أزرار الفرز حسب الأحجام الأربعة -->
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-4" id="cakeSizeFilterBar">
+                <button type="button" class="btn cake-filter-pill active" data-size="evening">
+                    حجم الأمسية <span class="cake-pill-sub">(8 ضيوف)</span>
+                </button>
+                <button type="button" class="btn cake-filter-pill" data-size="gathering">
+                    حجم الجمعات <span class="cake-pill-sub">(15 ضيفاً)</span>
+                </button>
+                <button type="button" class="btn cake-filter-pill" data-size="celebration">
+                    حجم الاحتفالات <span class="cake-pill-sub">(30 ضيفاً)</span>
+                </button>
+                <button type="button" class="btn cake-filter-pill" data-size="banquet">
+                    حجم الولائم والمناسبات الكبرى <span class="cake-pill-sub">(50 ضيفاً)</span>
+                </button>
+            </div>
+
+            <!-- شريط عنوان الحجم الحالي وعدد القوالب -->
+            <div
+                class="cake-current-banner d-flex justify-content-between align-items-center flex-wrap gap-2 px-4 py-2 rounded-pill mx-auto mb-4">
+                <span id="cakeActiveSizeTitle" class="fw-bold small">حجم الأمسية (يكفي 8 ضيوف)</span>
+                <span id="cakeActiveSizeCount" class="small opacity-75 fw-semibold">0 قالب</span>
+            </div>
+
+            <!-- منصة الكارد الواحد مع أسهم يمين ويسار -->
+            <div class="cake-slider-stage position-relative mx-auto">
+                <button type="button" id="prevCakeSlide" class="cake-nav-arrow cake-arrow-right"
+                    aria-label="القالب السابق">
+                    &#10094;
+                </button>
+
+                <div class="card cake-signature-card border-0 rounded-4 overflow-hidden">
+                    <div class="cake-media-wrap p-3 pb-0">
+                        <div class="cake-media-frame rounded-4 overflow-hidden">
+                            <img id="cakeCardImg" src="images/group 8/card1.jpeg" alt="قالب غاتو" class="w-100 h-100"
+                                loading="lazy">
+                        </div>
+                    </div>
+
+                    <div class="card-body p-4 text-end">
+                        <div class="d-flex justify-content-between align-items-center gap-2 mb-2">
+                            <span id="cakeCardSizeBadge"
+                                class="cake-size-chip px-3 py-1 rounded-pill small fw-semibold">
+                                حجم الأمسية · 8 ضيوف
+                            </span>
+                            <span id="cakeCardPrice" class="cake-price-display fw-bold">$22</span>
+                        </div>
+                        <div class="d-flex flex-column flex-sm-row gap-2">
+                            <a id="cakeCardWhatsappBtn" href="https://wa.me/963985212991?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%B3%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A7%D9%82%D9%8A%20%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-whatsapp flex-fill py-2 fw-semibold d-inline-flex align-items-center justify-content-center gap-2">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>طلب عبر واتساب</span>
+                            </a>
+                        </div>
+
+                        <div id="cakeDetailsPanel" class="cake-details-panel mt-3 p-3 rounded-3 d-none">
+                            <div class="fw-bold mb-1 cake-details-heading">تفاصيل القالب والمكونات:</div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" id="nextCakeSlide" class="cake-nav-arrow cake-arrow-left"
+                    aria-label="القالب التالي">
+                    &#10095;
+                </button>
+            </div>
+
+            <!-- عداد التنقل داخل القسم المختار -->
+            <div id="cakeSlideCounter" class="text-center mt-3 small text-muted fw-semibold">1 / 19</div>
+        </div>
+    </section>
+    <!-- end services section  -->
+
+    <!-- start sawari section  -->
+    <section id="sawari-section" class="py-5">
+        <div class="container">
+            <!-- عنوان القسم -->
+            <div class="text-center mb-4">
+                <span class="badge rounded-pill px-3 py-2 mb-2 sawari-badge">تشكيلة الضيافة الفاخرة</span>
+                <h2 class="fw-bold sawari-title">قسم السواري</h2>
+                <p class="text-muted mb-1">اسحب يميناً ويساراً لاستعراض السواري الفاخرة</p>
+            </div>
+
+            <!-- حاوية السحب على الجوال + شبكة 3×3 على الشاشات الكبيرة -->
+            <div class="sawari-track">
+                <!-- كرت 1 -->
+                <div class="sawari-item">
+                    <div class="card sawari-card h-100 border-0">
+                        <div class="sawari-img-wrap">
+                            <img src="images/sware/c1.jpeg" class="card-img-top" alt="سارية الراقي الملكية">
+                        </div>
+                        <div class="card-body d-flex flex-column text-end">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold mb-0">سارية الراقي الملكية</h5>
+                                <span class="sawari-price fw-bold">$15.</span>
+                            </div>
+                            <p class="card-text text-muted small mb-3">
+                                تشكيلة منتقاة من أفخر قطع السواري المحشوة بالفستق الحلبي واللوز المحمص.
+                            </p>
+                            <a href="https://wa.me/963985212991?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%B3%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A7%D9%82%D9%8A%20%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9"
+                                target="_blank" class="btn sawari-order-btn mt-auto w-100 fw-semibold">
+                                اطلب عبر واتساب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- كرت 2 -->
+                <div class="sawari-item">
+                    <div class="card sawari-card h-100 border-0">
+                        <div class="sawari-img-wrap">
+                            <img src="images/sware/c2.jpeg" class="card-img-top" alt="سارية الضيافة الذهبية">
+                        </div>
+                        <div class="card-body d-flex flex-column text-end">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold mb-0">سارية الضيافة الذهبية</h5>
+                                <span class="sawari-price fw-bold">$15</span>
+                            </div>
+                            <p class="card-text text-muted small mb-3">
+                                مزيج متناغم من القطع الكلاسيكية المقرمشة بنكهة السمن العربي الأصيل.
+                            </p>
+                            <a href="https://wa.me/963985212991?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%B3%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A7%D9%82%D9%8A%20%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9" class="btn sawari-order-btn mt-auto w-100 fw-semibold">
+                                اطلب عبر واتساب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- كرت 3 -->
+                <div class="sawari-item">
+                    <div class="card sawari-card h-100 border-0">
+                        <div class="sawari-img-wrap">
+                            <img src="images/sware/c3.jpeg" class="card-img-top" alt="سارية المناسبات الخاصة">
+                        </div>
+                        <div class="card-body d-flex flex-column text-end">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold mb-0">سارية المناسبات الخاصة</h5>
+                                <span class="sawari-price fw-bold">$15</span>
+                            </div>
+                            <p class="card-text text-muted small mb-3">
+                                صينية ضيافة كبيرة بتغليف فاخر تكفي لجمعـات العائلة والأعياد.
+                            </p>
+                            <a href="https://wa.me/963985212991?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%B3%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A7%D9%82%D9%8A%20%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9" class="btn sawari-order-btn mt-auto w-100 fw-semibold">
+                                اطلب عبر واتساب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sawari-item">
+                    <div class="card sawari-card h-100 border-0">
+                        <div class="sawari-img-wrap">
+                            <img src="images/sware/c4.jpeg" class="card-img-top" alt="سارية المناسبات الخاصة">
+                        </div>
+                        <div class="card-body d-flex flex-column text-end">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold mb-0">سارية المناسبات الخاصة</h5>
+                                <span class="sawari-price fw-bold">$15</span>
+                            </div>
+                            <p class="card-text text-muted small mb-3">
+                                صينية ضيافة كبيرة بتغليف فاخر تكفي لجمعـات العائلة والأعياد.
+                            </p>
+                            <a href="https://wa.me/963985212991?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%B3%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A7%D9%82%D9%8A%20%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9" class="btn sawari-order-btn mt-auto w-100 fw-semibold">
+                                اطلب عبر واتساب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sawari-item">
+                    <div class="card sawari-card h-100 border-0">
+                        <div class="sawari-img-wrap">
+                            <img src="images/sware/c5.jpeg" class="card-img-top" alt="سارية المناسبات الخاصة">
+                        </div>
+                        <div class="card-body d-flex flex-column text-end">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold mb-0">سارية المناسبات الخاصة</h5>
+                                <span class="sawari-price fw-bold">$15</span>
+                            </div>
+                            <p class="card-text text-muted small mb-3">
+                                صينية ضيافة كبيرة بتغليف فاخر تكفي لجمعـات العائلة والأعياد.
+                            </p>
+                            <a href="https://wa.me/963985212991?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%B3%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A7%D9%82%D9%8A%20%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9" class="btn sawari-order-btn mt-auto w-100 fw-semibold">
+                                اطلب عبر واتساب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sawari-item">
+                    <div class="card sawari-card h-100 border-0">
+                        <div class="sawari-img-wrap">
+                            <img src="images/sware/c6.jpeg" class="card-img-top" alt="سارية المناسبات الخاصة">
+                        </div>
+                        <div class="card-body d-flex flex-column text-end">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold mb-0">سارية المناسبات الخاصة</h5>
+                                <span class="sawari-price fw-bold">$15</span>
+                            </div>
+                            <p class="card-text text-muted small mb-3">
+                                صينية ضيافة كبيرة بتغليف فاخر تكفي لجمعـات العائلة والأعياد.
+                            </p>
+                            <a href="https://wa.me/963985212991?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%B3%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A7%D9%82%D9%8A%20%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9" class="btn sawari-order-btn mt-auto w-100 fw-semibold">
+                                اطلب عبر واتساب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sawari-item">
+                    <div class="card sawari-card h-100 border-0">
+                        <div class="sawari-img-wrap">
+                            <img src="images/sware/c7.jpeg" class="card-img-top" alt="سارية المناسبات الخاصة">
+                        </div>
+                        <div class="card-body d-flex flex-column text-end">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold mb-0">سارية المناسبات الخاصة</h5>
+                                <span class="sawari-price fw-bold">$15</span>
+                            </div>
+                            <p class="card-text text-muted small mb-3">
+                                صينية ضيافة كبيرة بتغليف فاخر تكفي لجمعـات العائلة والأعياد.
+                            </p>
+                            <a href="https://wa.me/963985212991?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%B3%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A7%D9%82%D9%8A%20%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9" class="btn sawari-order-btn mt-auto w-100 fw-semibold">
+                                اطلب عبر واتساب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sawari-item">
+                    <div class="card sawari-card h-100 border-0">
+                        <div class="sawari-img-wrap">
+                            <img src="images/sware/c8.jpeg" class="card-img-top" alt="سارية المناسبات الخاصة">
+                        </div>
+                        <div class="card-body d-flex flex-column text-end">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold mb-0">سارية المناسبات الخاصة</h5>
+                                <span class="sawari-price fw-bold">$15</span>
+                            </div>
+                            <p class="card-text text-muted small mb-3">
+                                صينية ضيافة كبيرة بتغليف فاخر تكفي لجمعـات العائلة والأعياد.
+                            </p>
+                            <a href="https://wa.me/963985212991?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%B3%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A7%D9%82%D9%8A%20%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9" class="btn sawari-order-btn mt-auto w-100 fw-semibold">
+                                اطلب عبر واتساب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sawari-item">
+                    <div class="card sawari-card h-100 border-0">
+                        <div class="sawari-img-wrap">
+                            <img src="images/sware/c9.jpeg" class="card-img-top" alt="سارية المناسبات الخاصة">
+                        </div>
+                        <div class="card-body d-flex flex-column text-end">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title fw-bold mb-0">سارية المناسبات الخاصة</h5>
+                                <span class="sawari-price fw-bold">$15</span>
+                            </div>
+                            <p class="card-text text-muted small mb-3">
+                                صينية ضيافة كبيرة بتغليف فاخر تكفي لجمعـات العائلة والأعياد.
+                            </p>
+                            <a href="https://wa.me/963985212991?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%B3%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A7%D9%82%D9%8A%20%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A%D8%A9" class="btn sawari-order-btn mt-auto w-100 fw-semibold">
+                                اطلب عبر واتساب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end sawari section  -->
+
+    <!-- start footer section  -->
+    <footer id="footer-section" class="raqi-footer pt-5 pb-4 mt-5">
+        <div class="container">
+            <div class="row g-4 text-end align-items-start">
+                <div class="col-6 col-lg-6">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="images/logo.jpeg" alt="شعار حلويات وباتسري الراقي" class="raqi-footer-logo">
+                        <div>
+                            <h5 class="fw-bold mb-0 raqi-footer-brand">حلويات وباتسري الراقي</h5>
+                            <span class="small raqi-footer-tagline">الاسم يليق بلحظاتك</span>
+                        </div>
+                    </div>
+
+                    <p class="small raqi-footer-text mb-2">
+                        محل حلويات وباتسري يجمع بين شغف فريق العمل وخبرته، ومجهّز بأحدث المعدات لتلبية كافة المناسبات
+                        والضيافات بأعلى جودة.
+                    </p>
+                    <p class="small fw-semibold raqi-footer-quote mb-0">
+                        «حيث يلتقي الرقيّ بالمذاق الأصيل»
+                    </p>
+                </div>
+                <div class="col-6 col-lg-6">
+                    <h6 class="fw-bold mb-3 raqi-footer-heading">تواصل وتصفح</h6>
+                    <ul class="list-unstyled small d-flex flex-column gap-2 mb-3">
+                        <li>
+                            <a href="#gateau-section" class="raqi-footer-link text-decoration-none">قوالب الغاتو</a>
+                        </li>
+                        <li>
+                            <a href="#sawari-section" class="raqi-footer-link text-decoration-none">قسم السواري</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/YOUR_PAGE_NAME" target="_blank" rel="noopener noreferrer"
+                                class="raqi-footer-link text-decoration-none d-inline-flex align-items-center gap-1">
+                                <span>صفحتنا على فيسبوك</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/963985212991" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-sm raqi-footer-btn fw-semibold">
+                        اطلب عبر واتساب
+                    </a>
+                    <a href="https://www.google.com/maps/place/%D8%AD%D9%84%D9%88%D9%8A%D8%A7%D8%AA+%D8%A7%D9%84%D8%B1%D8%A7%D9%82%D9%8A%E2%80%AD/@34.5067274,36.5882142,180m/data=!3m1!1e3!4m6!3m5!1s0x152255004792de35:0xc4e0cce524d47388!8m2!3d34.5066997!4d36.5877893!16s%2Fg%2F11nr0hbx40?entry=ttu&g_ep=EgoyMDI2MTEyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="raqi-footer-link text-decoration-none d-inline-flex align-items-center gap-2">
+                        <i class="fa-solid fa-location-dot raqi-footer-icon"></i>
+                        <span>حمص - القصير -جنب الهرم للحوالات المالية</span>
+                    </a>
+                </div>
+            </div>
+            <hr class="raqi-footer-divider my-4">
+
+            <div
+                class="d-flex flex-column flex-sm-row justify-content-between align-items-center small gap-2 raqi-footer-bottom">
+                <span>© 2026 حلويات وباتسري الراقي. جميع الحقوق محفوظة.</span>
+                <span>صُنع بعناية لكل مناسبة راقية</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- end footer section  -->
+    <!-- نافذة عرض الصورة المكبرة -->
+<div class="modal fade" id="imagePreviewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content raqi-preview-modal border-0 rounded-4 overflow-hidden">
+            <div class="modal-header border-0 pb-1">
+                <h5 class="modal-title fw-bold" id="previewModalTitle">معاينة المنتج</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+            </div>
+            <div class="modal-body text-center pt-2 pb-4">
+                <img id="previewModalImg" src="" alt="" class="img-fluid rounded-3 raqi-preview-img">
+                <p id="previewModalCaption" class="mt-3 mb-0 fw-semibold small"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
