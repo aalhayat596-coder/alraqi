@@ -2,7 +2,6 @@
 
 * {
     font-family: 'Times New Roman', Times, serif;
-
 }
 
 html {
@@ -14,8 +13,6 @@ section[id] {
 }
 
 /* start header style */
-/* اجعل الـ navbar مرجعاً للتموضع العائم */
-
 header .navbar {
     position: relative;
     min-height: 58px;
@@ -35,15 +32,12 @@ header .navbar {
     transform: scale(1.18);
 }
 
-/* زر القائمة ليكون متناسقاً مع الارتفاع الجديد */
 header .navbar-toggler {
     padding: 0.35rem 0.55rem;
     font-size: 0.95rem;
 }
 
-/* عندما تُفتح قائمة النافبار، تطفو فوق المحتوى ولا تكبس الأقسام للأسفل */
 @media (max-width: 991.98px) {
-
     header .navbar-collapse.show,
     header .navbar-collapse.collapsing {
         position: absolute;
@@ -72,45 +66,35 @@ header .navbar-toggler {
     }
 }
 
-/* محاذاة نصوص القائمة المنسدلة والروابط إلى اليمين */
 .navbar,
 .dropdown-menu,
 .dropdown-menu .dropdown-item {
     text-align: right;
     direction: rtl;
-
 }
 
-/* تخصيص الخط واللون وحالة التحويم لعناصر القائمة المنسدلة */
 .dropdown-menu .dropdown-item {
     font-size: 0.95rem;
     font-weight: 600;
     color: #4a3525;
-    /* لون النص (بني داكن دافئ) */
     background-color: transparent;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* لون العنصر عند مرور الفأرة أو الضغط عليه */
 .dropdown-menu .dropdown-item:hover,
 .dropdown-menu .dropdown-item:focus,
 .dropdown-menu .dropdown-item:active {
     color: #ffffff;
     background-color: #b0894c;
-    /* لون ذهبي دافئ مناسب للباتسري */
 }
-
-
-
 /* end header style */
+
 /* start hero style */
 .hero-modern {
     background: linear-gradient(135deg, #ba954b 0%, #f5efe6 100%);
     min-height: 85vh;
     overflow-x: hidden;
-
 }
-
 
 .hero-badge {
     background-color: rgba(176, 137, 76, 0.15);
@@ -162,7 +146,6 @@ header .navbar-toggler {
     border: 6px solid #ffffff;
 }
 
-/* تحسينات إضافية لشاشات الجوال الصغيرة */
 @media (max-width: 576px) {
     .hero-modern {
         min-height: auto;
@@ -173,7 +156,6 @@ header .navbar-toggler {
         max-height: 300px;
     }
 }
-
 /* end hero style */
 
 /* start table style */
@@ -196,29 +178,38 @@ header .navbar-toggler {
     font-size: 0.95rem;
 }
 
-/* عرض الكارد الواحد بشكل مريح على الجوال والكمبيوتر */
-.showcase-stage {
-    max-width: 440px;
-    padding: 0 38px;
-    /* مساحة جانبية لأزرار السابق والتالي */
-}
-
 .single-table-card {
     background-color: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(44, 30, 22, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.single-table-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(44, 30, 22, 0.13);
 }
 
 .showcase-img-box {
+    width: 100%;
     aspect-ratio: 4 / 3;
     overflow: hidden;
     background-color: #f3ece2;
 }
 
 .showcase-img-box img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    transition: opacity 0.25s ease;
+    cursor: zoom-in;
+    transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
-/* شريط السعر أسفل الصورة مباشرة */
+.showcase-img-box img:hover {
+    transform: scale(1.03);
+}
+
 .price-strip {
     background-color: #c1a993;
     border-bottom: 1px solid rgba(140, 102, 43, 0.15);
@@ -227,28 +218,23 @@ header .navbar-toggler {
 .price-label {
     color: #d71414;
     font-size: 0.9rem;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .price-value {
     color: #e90f0f;
     font-size: 1.2rem;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .table-heading {
     color: #2c1e16;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .table-summary {
     color: #5c4b40;
     font-size: 0.95rem;
     line-height: 1.65;
-    font-family: 'Times New Roman', Times, serif;
 }
 
-/* زر واتساب */
 .btn-whatsapp {
     background-color: #1f8a5b;
     color: #ffffff;
@@ -262,86 +248,6 @@ header .navbar-toggler {
     background-color: #176d47;
     color: #ffffff;
 }
-
-/* زر التفاصيل */
-.btn-details {
-    background-color: #efe5d6;
-    color: #2c1e16;
-    border: 1px solid #d5c3a8;
-    border-radius: 10px;
-    transition: background-color 0.2s ease;
-}
-
-.btn-details:hover,
-.btn-details:focus {
-    background-color: #e3d3bc;
-    color: #2c1e16;
-}
-
-/* صندوق تفاصيل ومحتويات الطاولة */
-.table-details-box {
-    background-color: #6b5431;
-    border-right: 4px solid #8c662b;
-}
-
-.details-heading {
-    color: #2c1e16;
-    font-size: 0.92rem;
-}
-
-.details-text {
-    color: #4a3b31;
-    font-size: 0.9rem;
-    line-height: 1.7;
-}
-
-/* أزرار السابق والتالي على جانبي الكارد */
-.nav-arrow {
-    position: absolute;
-    top: 34%;
-    transform: translateY(-50%);
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    border: 1px solid #d5c3a8;
-    background-color: #ffffff;
-    color: #2c1e16;
-    font-size: 0.95rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 12px rgba(44, 30, 22, 0.12);
-    cursor: pointer;
-    z-index: 5;
-    transition: all 0.2s ease;
-}
-
-.nav-arrow:hover {
-    background-color: #8c662b;
-    border-color: #8c662b;
-    color: #ffffff;
-}
-
-.nav-prev {
-    right: 0;
-}
-
-.nav-next {
-    left: 0;
-}
-
-@media (max-width: 576px) {
-    .showcase-stage {
-        padding: 0 30px;
-    }
-
-    .nav-arrow {
-        width: 30px;
-        height: 30px;
-        font-size: 0.85rem;
-    }
-}
-
 /* end table style */
 
 /* start services style */
@@ -355,21 +261,17 @@ header .navbar-toggler {
     color: #7c5821;
     font-weight: 600;
     font-size: large;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .cakes-section-title {
     color: #2c1e16;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .cakes-section-subtitle {
     color: #6b584c;
     font-size: 1.0rem;
-    font-family: 'Times New Roman', Times, serif;
 }
 
-/* أزرار الأحجام الأربعة */
 .cake-filter-pill {
     background-color: #deba44;
     color: #050201;
@@ -380,7 +282,6 @@ header .navbar-toggler {
     font-weight: 700;
     box-shadow: 0 3px 10px rgba(44, 30, 22, 0.04);
     transition: all 0.2s ease;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .cake-filter-pill:hover {
@@ -401,7 +302,6 @@ header .navbar-toggler {
     opacity: 0.82;
 }
 
-/* شريط اسم الحجم النشط */
 .cake-current-banner {
     max-width: 440px;
     background-color: rgb(205, 167, 72);
@@ -409,27 +309,27 @@ header .navbar-toggler {
     border: 1px solid rgba(138, 94, 29, 0.2);
 }
 
-/* منصة الكارد الواحد */
-.cake-slider-stage {
-    max-width: 430px;
-    padding: 0 30px;
-}
-
 .cake-signature-card {
     background-color: #e3dbb4;
-    box-shadow: 0 16px 34px rgba(113, 45, 5, 0.09);
+    box-shadow: 0 10px 25px rgba(44, 30, 22, 0.08);
     border: 1px solid rgba(176, 137, 76, 0.22);
-    border-radius: 20px;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cake-signature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(44, 30, 22, 0.13);
 }
 
 .cake-media-frame {
     position: relative;
     width: 100%;
-    aspect-ratio: 5 / 4;
-    max-height: 290px;
+    aspect-ratio: 4 / 3;
     overflow: hidden;
     background-color: #f5ede0;
-    border-radius: 16px;
+    border-radius: 14px;
 }
 
 .cake-media-frame img {
@@ -437,6 +337,12 @@ header .navbar-toggler {
     object-position: center;
     width: 100%;
     height: 100%;
+    cursor: zoom-in;
+    transition: transform 0.25s ease;
+}
+
+.cake-media-frame img:hover {
+    transform: scale(1.03);
 }
 
 .cake-size-chip {
@@ -446,88 +352,12 @@ header .navbar-toggler {
 
 .cake-price-display {
     color: #8c662b;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 }
-
-.cake-title-text {
-    color: #2c1e16;
-}
-
-.cake-summary-text {
-    color: #5c4b40;
-    font-size: 0.92rem;
-    line-height: 1.65;
-}
-
-/* زر التفاصيل وصندوق التفاصيل */
-.cake-details-btn {
-    background-color: #f6efe4;
-    color: #2c1e16;
-    border: 1px solid #d5c3a8;
-    border-radius: 10px;
-    transition: all 0.2s ease;
-}
-
-.cake-details-btn:hover {
-    background-color: #eadbc6;
-    color: #2c1e16;
-}
-
-.cake-details-panel {
-    background-color: #fdf9f2;
-    border: 1px solid #eadcc6;
-}
-
-.cake-details-heading {
-    color: #2c1e16;
-    font-size: 0.88rem;
-}
-
-.cake-details-body {
-    color: #5c4b40;
-    font-size: 0.86rem;
-    line-height: 1.6;
-}
-
-/* الأسهم يمين ويسار */
-.cake-nav-arrow {
-    position: absolute;
-    top: 30%;
-    transform: translateY(-50%);
-    width: 34px;
-    height: 46px;
-    border-radius: 11px;
-    border: 1px solid #d9c5a5;
-    background-color: rgba(255, 255, 255, 0.96);
-    color: #2c1e16;
-    font-size: 0.92rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 6px 16px rgba(44, 30, 22, 0.11);
-    cursor: pointer;
-    z-index: 5;
-    transition: all 0.2s ease;
-}
-
-.cake-nav-arrow:hover {
-    background-color: #2c1e16;
-    border-color: #2c1e16;
-    color: #f6e7cb;
-}
-
-.cake-arrow-right {
-    right: 0;
-}
-
-.cake-arrow-left {
-    left: 0;
-}
-
 /* end services style */
 
-/* start sawari style */
-/* 1. وضع الجوال الافتراضي: سحب أفقي ناعم وكرت كبير يملأ الشاشة تقريباً */
+/* start sawari & unified swipe-grid style */
+/* 1. وضع الجوال الافتراضي: سحب أفقي ناعم وكرت كبير يملأ الشاشة تقريباً مع إظهار طرف الكرت المجاور */
 .sawari-track {
     display: flex;
     flex-wrap: nowrap;
@@ -537,7 +367,6 @@ header .navbar-toggler {
     scroll-behavior: smooth;
     padding-bottom: 1rem;
     -webkit-overflow-scrolling: touch;
-    /* إخفاء شريط التمرير التقليدي لمظهر أنيق */
     scrollbar-width: none;
 }
 
@@ -547,7 +376,6 @@ header .navbar-toggler {
 
 .sawari-item {
     flex: 0 0 88%;
-    /* يأخذ 88% من عرض الجوال ويبقي طرف الكرت التالي ظاهراً */
     scroll-snap-align: center;
 }
 
@@ -559,9 +387,13 @@ header .navbar-toggler {
         gap: 1.5rem;
         overflow-x: visible;
     }
+
+    .sawari-item {
+        flex: initial;
+    }
 }
 
-/* 3. الشاشات الكبيرة (لابتوب وديسكتوب): شبكة 3 × 3 متناسقة */
+/* 3. الشاشات الكبيرة (لابتوب وديسكتوب): شبكة 3 أعمدة متناسقة */
 @media (min-width: 992px) {
     .sawari-track {
         grid-template-columns: repeat(3, 1fr);
@@ -585,7 +417,6 @@ header .navbar-toggler {
 .sawari-img-wrap {
     width: 100%;
     aspect-ratio: 4 / 3;
-    /* ارتفاع متناسق وجميل على كل الشاشات */
     overflow: hidden;
     background-color: #f6efe2;
 }
@@ -594,6 +425,12 @@ header .navbar-toggler {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: zoom-in;
+    transition: transform 0.25s ease;
+}
+
+.sawari-img-wrap img:hover {
+    transform: scale(1.03);
 }
 
 .sawari-price {
@@ -615,11 +452,9 @@ header .navbar-toggler {
     background-color: #8c662b;
     color: #ffffff;
 }
-
-/* end sawari style */
+/* end sawari & unified swipe-grid style */
 
 /* start footer style */
-/* تنسيق الفوتر بروح الراقي */
 .raqi-footer {
     background-color: #2c1e16;
     color: #f6e7cb;
@@ -687,22 +522,7 @@ header .navbar-toggler {
 .raqi-footer-bottom {
     color: rgba(246, 231, 203, 0.75);
 }
-
 /* end footer style */
-
-/* إشارة أن الصورة قابلة للضغط والتكبير */
-.sawari-img-wrap img,
-#cakeCardImg,
-#tableImg {
-    cursor: zoom-in;
-    transition: transform 0.25s ease;
-}
-
-.sawari-img-wrap img:hover,
-#cakeCardImg:hover,
-#tableImg:hover {
-    transform: scale(1.03);
-}
 
 /* نافذة المعاينة */
 .raqi-preview-modal {
