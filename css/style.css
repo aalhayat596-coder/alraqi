@@ -305,8 +305,8 @@ header .navbar-toggler {
 .cake-current-banner {
     max-width: 440px;
     background-color: rgb(205, 167, 72);
-    color: #2c1e16;
-    border: 1px solid rgba(138, 94, 29, 0.2);
+    color: #red;
+    border: none;
 }
 
 .cake-signature-card {
